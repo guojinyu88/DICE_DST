@@ -1,0 +1,59 @@
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 137 - INFO - ******HYPER-PARAMETERS******
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - exp_purpose: 正式训练-大学习率
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - train_path: ./data/MultiWoZ/2.2/processed/train_dials.json
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - test_path: ./data/MultiWoZ/2.2/processed/test_dials.json
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - save_path: ./savedModels/DSS/2022-05-05-14-28-32.pth
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - log_path: ./logs/DSS/2022-05-05-14-28-32.log
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - tensorBoard_path: ./tensorboard/DSS/2022-05-05-14-28-32/
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - require_improvement: 5000
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - num_epochs: 100
+2022-05-05 14:28:32,809 - DiCoSConfig.py - 139 - INFO - batch_size: 32
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - pad_size: 400
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - eval_step: 500
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - learning_rate: 0.001
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - bert_path: ./pretrained_models/albert_large
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - hidden_size: 768
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - logger: <Logger 2022-05-05-14-28-32 (DEBUG)>
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - tokenizer: PreTrainedTokenizer(name_or_path='./pretrained_models/albert_large', vocab_size=30000, model_max_len=1000000000000000019884624838656, is_fast=False, padding_side='right', truncation_side='right', special_tokens={'bos_token': '[CLS]', 'eos_token': '[SEP]', 'unk_token': '<unk>', 'sep_token': '[SEP]', 'pad_token': '<pad>', 'cls_token': '[CLS]', 'mask_token': AddedToken("[MASK]", rstrip=False, lstrip=True, single_word=False, normalized=False), 'additional_special_tokens': ['[SLOT]', '[VALUE]', '[NONE]', 'dontcare']})
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - device: cuda
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - rate_warmup_steps: 0.01
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - shuffle: True
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - drop_last: True
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - num_workers: 4
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - teacherMultiSample: 5
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - schema_path: ./data/MultiWoZ/2.2/processed/schema.json
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - testset_update_pred_path: ./data/MultiWoZ/2.2/processed/cls_score_test_state_update_predictor_output.json
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - slotTypeNum: 30
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - dict_update: {'update': 0, 'inherit': 1}
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - maxSlotValue: 16
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - domain: ['hotel', 'train', 'attraction', 'restaurant', 'taxi']
+2022-05-05 14:28:32,810 - DiCoSConfig.py - 139 - INFO - num_multiHead: 12
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - num_relationType: 4
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - num_GNNLayer: 2
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - track_slots: ['attraction-area', 'attraction-name', 'attraction-type', 'hotel-area', 'hotel-bookday', 'hotel-bookpeople', 'hotel-bookstay', 'hotel-internet', 'hotel-name', 'hotel-parking', 'hotel-pricerange', 'hotel-stars', 'hotel-type', 'restaurant-area', 'restaurant-bookday', 'restaurant-bookpeople', 'restaurant-booktime', 'restaurant-food', 'restaurant-name', 'restaurant-pricerange', 'taxi-arriveby', 'taxi-departure', 'taxi-destination', 'taxi-leaveat', 'train-arriveby', 'train-bookpeople', 'train-day', 'train-departure', 'train-destination', 'train-leaveat']
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - dict_sequential: {'unsequential': 0, 'sequential': 1}
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - sequentialChangeProb: 0.5
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - dict_contextual: {'uncontextual': 0, 'contextual': 1}
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - contextualChangeProb: 0.5
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - startTime: 2022-05-05-14-28-32
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 139 - INFO - tbWriter: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f91d0bd3760>
+2022-05-05 14:28:32,811 - DiCoSConfig.py - 140 - INFO - ****************************
+2022-05-05 14:28:36,418 - DSSTrainUtils.py - 21 - INFO - load train set......
+2022-05-05 14:37:00,098 - DSSTrainUtils.py - 23 - INFO - load test set......
+2022-05-05 14:39:43,140 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 100/1770, training......, mean loss of 100 batch is 0.20419590175151825
+2022-05-05 14:41:16,643 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 200/1770, training......, mean loss of 100 batch is 0.12515342235565186
+2022-05-05 14:42:50,107 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 300/1770, training......, mean loss of 100 batch is 0.12544141709804535
+2022-05-05 14:44:23,603 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 400/1770, training......, mean loss of 100 batch is 0.12491650879383087
+2022-05-05 14:45:57,089 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 500/1770, training......, mean loss of 100 batch is 0.12595131993293762
+2022-05-05 14:45:57,476 - DSSTrainUtils.py - 201 - WARNING - Iter:499/1770, strat evaluate on testset
+2022-05-05 14:47:16,073 - DSSTrainUtils.py - 237 - INFO - epoch: 1/100, step: 500/1770, test mean loss is 0.12660038471221924, pre f1 is 0.9796672828096119 *
+2022-05-05 14:48:49,146 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 600/1770, training......, mean loss of 100 batch is 0.1255616545677185
+2022-05-05 14:50:22,650 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 700/1770, training......, mean loss of 100 batch is 0.12454820424318314
+2022-05-05 14:51:56,354 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 800/1770, training......, mean loss of 100 batch is 0.12541036307811737
+2022-05-05 14:53:29,880 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 900/1770, training......, mean loss of 100 batch is 0.12552933394908905
+2022-05-05 14:55:03,415 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1000/1770, training......, mean loss of 100 batch is 0.12618441879749298
+2022-05-05 14:55:03,801 - DSSTrainUtils.py - 201 - WARNING - Iter:999/1770, strat evaluate on testset
+2022-05-05 14:56:22,454 - DSSTrainUtils.py - 237 - INFO - epoch: 1/100, step: 1000/1770, test mean loss is 0.12656304240226746, pre f1 is 0.9796837851513491 *
+2022-05-05 14:57:55,653 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1100/1770, training......, mean loss of 100 batch is 0.1248985081911087
+2022-05-05 14:59:29,257 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1200/1770, training......, mean loss of 100 batch is 0.12562009692192078
+2022-05-05 15:01:02,761 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1300/1770, training......, mean loss of 100 batch is 0.12578429281711578

@@ -1,0 +1,88 @@
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 137 - INFO - ******HYPER-PARAMETERS******
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 139 - INFO - exp_purpose: 正式训练-小batch、屏蔽其他loss干扰
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 139 - INFO - train_path: ./data/MultiWoZ/2.2/processed/train_dials.json
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 139 - INFO - test_path: ./data/MultiWoZ/2.2/processed/test_dials.json
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 139 - INFO - save_path: ./savedModels/DSS/2022-05-05-15-19-03.pth
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 139 - INFO - log_path: ./logs/DSS/2022-05-05-15-19-03.log
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 139 - INFO - tensorBoard_path: ./tensorboard/DSS/2022-05-05-15-19-03/
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 139 - INFO - require_improvement: 20000
+2022-05-05 15:19:03,810 - DiCoSConfig.py - 139 - INFO - num_epochs: 100
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - batch_size: 8
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - pad_size: 400
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - eval_step: 2000
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - learning_rate: 2e-05
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - bert_path: ./pretrained_models/albert_large
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - hidden_size: 768
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - logger: <Logger 2022-05-05-15-19-03 (DEBUG)>
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - tokenizer: PreTrainedTokenizer(name_or_path='./pretrained_models/albert_large', vocab_size=30000, model_max_len=1000000000000000019884624838656, is_fast=False, padding_side='right', truncation_side='right', special_tokens={'bos_token': '[CLS]', 'eos_token': '[SEP]', 'unk_token': '<unk>', 'sep_token': '[SEP]', 'pad_token': '<pad>', 'cls_token': '[CLS]', 'mask_token': AddedToken("[MASK]", rstrip=False, lstrip=True, single_word=False, normalized=False), 'additional_special_tokens': ['[SLOT]', '[VALUE]', '[NONE]', 'dontcare']})
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - device: cuda
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - rate_warmup_steps: 0.01
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - shuffle: True
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - drop_last: True
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - num_workers: 4
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - teacherMultiSample: 5
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - schema_path: ./data/MultiWoZ/2.2/processed/schema.json
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - testset_update_pred_path: ./data/MultiWoZ/2.2/processed/cls_score_test_state_update_predictor_output.json
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - slotTypeNum: 30
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - dict_update: {'update': 0, 'inherit': 1}
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - maxSlotValue: 16
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - domain: ['hotel', 'train', 'attraction', 'restaurant', 'taxi']
+2022-05-05 15:19:03,811 - DiCoSConfig.py - 139 - INFO - num_multiHead: 12
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - num_relationType: 4
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - num_GNNLayer: 2
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - track_slots: ['attraction-area', 'attraction-name', 'attraction-type', 'hotel-area', 'hotel-bookday', 'hotel-bookpeople', 'hotel-bookstay', 'hotel-internet', 'hotel-name', 'hotel-parking', 'hotel-pricerange', 'hotel-stars', 'hotel-type', 'restaurant-area', 'restaurant-bookday', 'restaurant-bookpeople', 'restaurant-booktime', 'restaurant-food', 'restaurant-name', 'restaurant-pricerange', 'taxi-arriveby', 'taxi-departure', 'taxi-destination', 'taxi-leaveat', 'train-arriveby', 'train-bookpeople', 'train-day', 'train-departure', 'train-destination', 'train-leaveat']
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - dict_sequential: {'unsequential': 0, 'sequential': 1}
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - sequentialChangeProb: 0.5
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - dict_contextual: {'uncontextual': 0, 'contextual': 1}
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - contextualChangeProb: 0.5
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - startTime: 2022-05-05-15-19-03
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 139 - INFO - tbWriter: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f4e3ed00670>
+2022-05-05 15:19:03,812 - DiCoSConfig.py - 140 - INFO - ****************************
+2022-05-05 15:19:07,577 - DSSTrainUtils.py - 21 - INFO - load train set......
+2022-05-05 15:27:35,389 - DSSTrainUtils.py - 23 - INFO - load test set......
+2022-05-05 15:29:30,951 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 100/7083, training......, mean loss of 100 batch is 0.39683276414871216
+2022-05-05 15:30:19,937 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 200/7083, training......, mean loss of 100 batch is 0.13337761163711548
+2022-05-05 15:31:08,821 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 300/7083, training......, mean loss of 100 batch is 0.04730173200368881
+2022-05-05 15:31:57,606 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 400/7083, training......, mean loss of 100 batch is 0.04056509956717491
+2022-05-05 15:32:46,321 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 500/7083, training......, mean loss of 100 batch is 0.0384497307240963
+2022-05-05 15:33:35,085 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 600/7083, training......, mean loss of 100 batch is 0.037205588072538376
+2022-05-05 15:34:23,808 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 700/7083, training......, mean loss of 100 batch is 0.038186147809028625
+2022-05-05 15:35:12,559 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 800/7083, training......, mean loss of 100 batch is 0.041295088827610016
+2022-05-05 15:36:01,324 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 900/7083, training......, mean loss of 100 batch is 0.03922106698155403
+2022-05-05 15:36:50,098 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1000/7083, training......, mean loss of 100 batch is 0.03847169876098633
+2022-05-05 15:37:38,871 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1100/7083, training......, mean loss of 100 batch is 0.03743939474225044
+2022-05-05 15:38:27,580 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1200/7083, training......, mean loss of 100 batch is 0.03850165009498596
+2022-05-05 15:39:16,348 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1300/7083, training......, mean loss of 100 batch is 0.03806908056139946
+2022-05-05 15:40:05,064 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1400/7083, training......, mean loss of 100 batch is 0.03976520523428917
+2022-05-05 15:40:53,814 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1500/7083, training......, mean loss of 100 batch is 0.0373811200261116
+2022-05-05 15:41:42,538 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1600/7083, training......, mean loss of 100 batch is 0.03799889609217644
+2022-05-05 15:42:31,255 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1700/7083, training......, mean loss of 100 batch is 0.041949864476919174
+2022-05-05 15:43:19,991 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1800/7083, training......, mean loss of 100 batch is 0.03690384328365326
+2022-05-05 15:44:08,706 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 1900/7083, training......, mean loss of 100 batch is 0.03740030899643898
+2022-05-05 15:44:57,436 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2000/7083, training......, mean loss of 100 batch is 0.039980199187994
+2022-05-05 15:44:57,543 - DSSTrainUtils.py - 205 - WARNING - Iter:1999/7083, strat evaluate on testset
+2022-05-05 15:47:39,976 - DSSTrainUtils.py - 241 - INFO - epoch: 1/100, step: 2000/7083, test mean loss is 0.4393046796321869, pre f1 is 0.9796709688140475 *
+2022-05-05 15:48:28,719 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2100/7083, training......, mean loss of 100 batch is 0.03731108456850052
+2022-05-05 15:49:17,514 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2200/7083, training......, mean loss of 100 batch is 0.03801655396819115
+2022-05-05 15:50:06,286 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2300/7083, training......, mean loss of 100 batch is 0.04001612588763237
+2022-05-05 15:50:55,038 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2400/7083, training......, mean loss of 100 batch is 0.0395127534866333
+2022-05-05 15:51:43,802 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2500/7083, training......, mean loss of 100 batch is 0.038553185760974884
+2022-05-05 15:52:32,554 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2600/7083, training......, mean loss of 100 batch is 0.03817710280418396
+2022-05-05 15:53:21,323 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2700/7083, training......, mean loss of 100 batch is 0.03671750798821449
+2022-05-05 15:54:10,072 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2800/7083, training......, mean loss of 100 batch is 0.036716774106025696
+2022-05-05 15:54:58,863 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 2900/7083, training......, mean loss of 100 batch is 0.03884100541472435
+2022-05-05 15:55:47,631 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3000/7083, training......, mean loss of 100 batch is 0.03754856437444687
+2022-05-05 15:56:36,341 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3100/7083, training......, mean loss of 100 batch is 0.03871464729309082
+2022-05-05 15:57:25,075 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3200/7083, training......, mean loss of 100 batch is 0.038672443479299545
+2022-05-05 15:58:13,846 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3300/7083, training......, mean loss of 100 batch is 0.040255188941955566
+2022-05-05 15:59:02,775 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3400/7083, training......, mean loss of 100 batch is 0.03737975284457207
+2022-05-05 15:59:51,743 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3500/7083, training......, mean loss of 100 batch is 0.0367959626019001
+2022-05-05 16:00:40,678 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3600/7083, training......, mean loss of 100 batch is 0.0395873561501503
+2022-05-05 16:01:29,654 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3700/7083, training......, mean loss of 100 batch is 0.039462022483348846
+2022-05-05 16:02:18,500 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3800/7083, training......, mean loss of 100 batch is 0.03725331649184227
+2022-05-05 16:03:07,228 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 3900/7083, training......, mean loss of 100 batch is 0.040544573217630386
+2022-05-05 16:03:55,922 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 4000/7083, training......, mean loss of 100 batch is 0.03987766057252884
+2022-05-05 16:03:56,033 - DSSTrainUtils.py - 205 - WARNING - Iter:3999/7083, strat evaluate on testset
+2022-05-05 16:06:38,389 - DSSTrainUtils.py - 241 - INFO - epoch: 1/100, step: 4000/7083, test mean loss is 0.44392552971839905, pre f1 is 0.9796709688140475 *
+2022-05-05 16:07:27,026 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 4100/7083, training......, mean loss of 100 batch is 0.03854408487677574
+2022-05-05 16:08:15,766 - DSSTrainUtils.py - 162 - INFO - epoch: 1/100, step: 4200/7083, training......, mean loss of 100 batch is 0.03796061500906944

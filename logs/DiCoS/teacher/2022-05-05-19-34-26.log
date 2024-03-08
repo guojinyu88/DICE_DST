@@ -1,0 +1,175 @@
+2022-05-05 19:34:27,058 - DiCoSConfig.py - 139 - INFO - ******HYPER-PARAMETERS******
+2022-05-05 19:34:27,058 - DiCoSConfig.py - 141 - INFO - exp_purpose: 学习率差异化设置
+2022-05-05 19:34:27,058 - DiCoSConfig.py - 141 - INFO - train_path: ./data/MultiWoZ/2.2/processed/train_dials.json
+2022-05-05 19:34:27,058 - DiCoSConfig.py - 141 - INFO - test_path: ./data/MultiWoZ/2.2/processed/test_dials.json
+2022-05-05 19:34:27,058 - DiCoSConfig.py - 141 - INFO - save_path: ./savedModels/DiCoS/teacher/2022-05-05-19-34-26.pth
+2022-05-05 19:34:27,058 - DiCoSConfig.py - 141 - INFO - log_path: ./logs/DiCoS/teacher/2022-05-05-19-34-26.log
+2022-05-05 19:34:27,058 - DiCoSConfig.py - 141 - INFO - tensorBoard_path: ./tensorboard/DiCoS/teacher/2022-05-05-19-34-26/
+2022-05-05 19:34:27,058 - DiCoSConfig.py - 141 - INFO - require_improvement: 2000000
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - num_epochs: 10
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - batch_size: 8
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - pad_size: 512
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - eval_step: 3000
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - basic_learning_rate: 0.001
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - encoder_learning_rate: 2e-05
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - bert_path: ./pretrained_models/albert_large
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - hidden_size: 768
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - logger: <Logger 2022-05-05-19-34-26 (DEBUG)>
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - tokenizer: PreTrainedTokenizer(name_or_path='./pretrained_models/albert_large', vocab_size=30000, model_max_len=1000000000000000019884624838656, is_fast=False, padding_side='right', truncation_side='right', special_tokens={'bos_token': '[CLS]', 'eos_token': '[SEP]', 'unk_token': '<unk>', 'sep_token': '[SEP]', 'pad_token': '<pad>', 'cls_token': '[CLS]', 'mask_token': AddedToken("[MASK]", rstrip=False, lstrip=True, single_word=False, normalized=False), 'additional_special_tokens': ['[SLOT]', '[VALUE]', '[NONE]', 'dontcare']})
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - device: cuda
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - rate_warmup_steps: 0.2
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - shuffle: True
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - drop_last: True
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - num_workers: 4
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - teacherMultiSample: 5
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - schema_path: ./data/MultiWoZ/2.2/processed/schema.json
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - testset_update_pred_path: ./data/MultiWoZ/2.2/processed/cls_score_test_state_update_predictor_output.json
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - slotTypeNum: 30
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - dict_update: {'update': 0, 'inherit': 1}
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - maxSlotValue: 16
+2022-05-05 19:34:27,059 - DiCoSConfig.py - 141 - INFO - domain: ['hotel', 'train', 'attraction', 'restaurant', 'taxi']
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - num_multiHead: 12
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - num_relationType: 4
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - num_GNNLayer: 2
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - track_slots: ['attraction-area', 'attraction-name', 'attraction-type', 'hotel-area', 'hotel-bookday', 'hotel-bookpeople', 'hotel-bookstay', 'hotel-internet', 'hotel-name', 'hotel-parking', 'hotel-pricerange', 'hotel-stars', 'hotel-type', 'restaurant-area', 'restaurant-bookday', 'restaurant-bookpeople', 'restaurant-booktime', 'restaurant-food', 'restaurant-name', 'restaurant-pricerange', 'taxi-arriveby', 'taxi-departure', 'taxi-destination', 'taxi-leaveat', 'train-arriveby', 'train-bookpeople', 'train-day', 'train-departure', 'train-destination', 'train-leaveat']
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - dict_sequential: {'unsequential': 0, 'sequential': 1}
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - sequentialChangeProb: 0.5
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - dict_contextual: {'uncontextual': 0, 'contextual': 1}
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - contextualChangeProb: 0.5
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - startTime: 2022-05-05-19-34-26
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 141 - INFO - tbWriter: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f608d27a940>
+2022-05-05 19:34:27,060 - DiCoSConfig.py - 142 - INFO - ****************************
+2022-05-05 19:34:29,520 - teacherTrainUtils.py - 18 - INFO - load sequential train set......
+2022-05-05 19:34:44,121 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:34:45,023 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:34:57,700 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:34:57,864 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:01,141 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:02,028 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:14,786 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:14,948 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:18,198 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:19,091 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:31,738 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:31,899 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:35,213 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:36,126 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:48,740 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:48,900 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:52,116 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:35:53,008 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:36:05,563 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:36:05,727 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:36:07,924 - teacherTrainUtils.py - 20 - INFO - load sequential test set......
+2022-05-05 19:36:19,951 - teacherTrainUtils.py - 22 - INFO - load contextual train set......
+2022-05-05 19:36:38,722 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:36:39,625 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:36:52,761 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:36:52,969 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:36:56,398 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:36:57,323 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:10,457 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:10,639 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:14,069 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:14,980 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:28,180 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:28,352 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:31,771 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:32,739 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:45,879 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:46,058 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:49,463 - teacherDataUtils.py - 141 - WARNING - 658-MUL0926.json，只有一轮,丢弃这个数据
+2022-05-05 19:37:50,413 - teacherDataUtils.py - 141 - WARNING - 988-MUL1349.json，只有一轮,丢弃这个数据
+2022-05-05 19:38:03,635 - teacherDataUtils.py - 141 - WARNING - 7112-SNG1155.json，只有一轮,丢弃这个数据
+2022-05-05 19:38:03,813 - teacherDataUtils.py - 141 - WARNING - 7256-SNG1299.json，只有一轮,丢弃这个数据
+2022-05-05 19:38:06,113 - teacherTrainUtils.py - 24 - INFO - load contextual test set......
+2022-05-05 19:38:18,626 - teacherTrainUtils.py - 28 - INFO - 1651750698.626088, start train......
+2022-05-05 19:38:18,630 - teacherTrainUtils.py - 55 - INFO - ------Epoch: 0/10------
+2022-05-05 19:38:22,504 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1/5260, training......, sequential mean loss is 0.6305233240127563, sequential acc is 0.0062500000931322575, contextual mean loss is 0.7899932265281677, contextual acc is 0.004999999888241291
+2022-05-05 19:38:22,506 - teacherTrainUtils.py - 112 - WARNING - Iter:0/5260, strat evaluate on testset
+2022-05-05 19:40:35,950 - teacherTrainUtils.py - 129 - WARNING - epoch: 1/10, step: 1/5260, sequential mean loss is 0.8553503155708313, sequential acc is 0.5060096383094788, contextual mean loss is 0.749951958656311, contextual acc is 0.4943910241127014. *
+2022-05-05 19:41:32,416 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 101/5260, training......, sequential mean loss is 0.8529546856880188, sequential acc is 0.5074999928474426, contextual mean loss is 0.745741069316864, contextual acc is 0.5112500190734863
+2022-05-05 19:42:28,880 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 201/5260, training......, sequential mean loss is 0.7553386688232422, sequential acc is 0.5, contextual mean loss is 0.7129938006401062, contextual acc is 0.5224999785423279
+2022-05-05 19:43:25,371 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 301/5260, training......, sequential mean loss is 0.7228057384490967, sequential acc is 0.5162500143051147, contextual mean loss is 0.7352798581123352, contextual acc is 0.5037500262260437
+2022-05-05 19:44:21,858 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 401/5260, training......, sequential mean loss is 0.7327057123184204, sequential acc is 0.5037500262260437, contextual mean loss is 0.6975688338279724, contextual acc is 0.5400000214576721
+2022-05-05 19:45:18,347 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 501/5260, training......, sequential mean loss is 0.7181706428527832, sequential acc is 0.5137500166893005, contextual mean loss is 0.7266467809677124, contextual acc is 0.5162500143051147
+2022-05-05 19:46:14,835 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 601/5260, training......, sequential mean loss is 0.7173827290534973, sequential acc is 0.49125000834465027, contextual mean loss is 0.7157266736030579, contextual acc is 0.5199999809265137
+2022-05-05 19:47:11,313 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 701/5260, training......, sequential mean loss is 0.6159656047821045, sequential acc is 0.6712499856948853, contextual mean loss is 0.7022504210472107, contextual acc is 0.5400000214576721
+2022-05-05 19:48:07,795 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 801/5260, training......, sequential mean loss is 0.5721160173416138, sequential acc is 0.6875, contextual mean loss is 0.6696566939353943, contextual acc is 0.6025000214576721
+2022-05-05 19:49:04,312 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 901/5260, training......, sequential mean loss is 0.5125281810760498, sequential acc is 0.7437499761581421, contextual mean loss is 0.6482685804367065, contextual acc is 0.6337500214576721
+2022-05-05 19:50:00,841 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1001/5260, training......, sequential mean loss is 0.5028179287910461, sequential acc is 0.7325000166893005, contextual mean loss is 0.6307495832443237, contextual acc is 0.6299999952316284
+2022-05-05 19:50:57,344 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1101/5260, training......, sequential mean loss is 0.4893184006214142, sequential acc is 0.7475000023841858, contextual mean loss is 0.5603616833686829, contextual acc is 0.6974999904632568
+2022-05-05 19:51:53,831 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1201/5260, training......, sequential mean loss is 0.46556246280670166, sequential acc is 0.7875000238418579, contextual mean loss is 0.5753059387207031, contextual acc is 0.6800000071525574
+2022-05-05 19:52:50,319 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1301/5260, training......, sequential mean loss is 0.44923102855682373, sequential acc is 0.7799999713897705, contextual mean loss is 0.5501569509506226, contextual acc is 0.7149999737739563
+2022-05-05 19:53:46,825 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1401/5260, training......, sequential mean loss is 0.39837759733200073, sequential acc is 0.8012499809265137, contextual mean loss is 0.566328227519989, contextual acc is 0.7262499928474426
+2022-05-05 19:54:43,331 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1501/5260, training......, sequential mean loss is 0.4318286180496216, sequential acc is 0.8012499809265137, contextual mean loss is 0.5200017690658569, contextual acc is 0.7462499737739563
+2022-05-05 19:55:39,847 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1601/5260, training......, sequential mean loss is 0.37948620319366455, sequential acc is 0.8174999952316284, contextual mean loss is 0.46797192096710205, contextual acc is 0.7825000286102295
+2022-05-05 19:56:36,369 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1701/5260, training......, sequential mean loss is 0.35153549909591675, sequential acc is 0.84375, contextual mean loss is 0.4644191861152649, contextual acc is 0.7787500023841858
+2022-05-05 19:57:32,908 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1801/5260, training......, sequential mean loss is 0.32933905720710754, sequential acc is 0.8600000143051147, contextual mean loss is 0.47525346279144287, contextual acc is 0.7762500047683716
+2022-05-05 19:58:29,435 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 1901/5260, training......, sequential mean loss is 0.2849189043045044, sequential acc is 0.8725000023841858, contextual mean loss is 0.4360344409942627, contextual acc is 0.8025000095367432
+2022-05-05 19:59:25,987 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2001/5260, training......, sequential mean loss is 0.27340200543403625, sequential acc is 0.8924999833106995, contextual mean loss is 0.4047349691390991, contextual acc is 0.8162500262260437
+2022-05-05 20:00:22,534 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2101/5260, training......, sequential mean loss is 0.2535315752029419, sequential acc is 0.893750011920929, contextual mean loss is 0.3897421956062317, contextual acc is 0.8399999737739563
+2022-05-05 20:01:19,097 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2201/5260, training......, sequential mean loss is 0.2781941294670105, sequential acc is 0.8949999809265137, contextual mean loss is 0.39102789759635925, contextual acc is 0.8125
+2022-05-05 20:02:15,639 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2301/5260, training......, sequential mean loss is 0.24659912288188934, sequential acc is 0.8999999761581421, contextual mean loss is 0.4373645484447479, contextual acc is 0.7975000143051147
+2022-05-05 20:03:12,180 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2401/5260, training......, sequential mean loss is 0.21707992255687714, sequential acc is 0.9200000166893005, contextual mean loss is 0.31977716088294983, contextual acc is 0.8675000071525574
+2022-05-05 20:04:08,736 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2501/5260, training......, sequential mean loss is 0.2471715360879898, sequential acc is 0.9012500047683716, contextual mean loss is 0.3217603266239166, contextual acc is 0.8662499785423279
+2022-05-05 20:05:05,286 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2601/5260, training......, sequential mean loss is 0.2036103457212448, sequential acc is 0.918749988079071, contextual mean loss is 0.3105008602142334, contextual acc is 0.8712499737739563
+2022-05-05 20:06:01,855 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2701/5260, training......, sequential mean loss is 0.26239752769470215, sequential acc is 0.887499988079071, contextual mean loss is 0.3342517614364624, contextual acc is 0.8687499761581421
+2022-05-05 20:06:58,418 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2801/5260, training......, sequential mean loss is 0.2590676248073578, sequential acc is 0.893750011920929, contextual mean loss is 0.3642297685146332, contextual acc is 0.8500000238418579
+2022-05-05 20:07:54,985 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 2901/5260, training......, sequential mean loss is 0.23886525630950928, sequential acc is 0.9112499952316284, contextual mean loss is 0.3038678467273712, contextual acc is 0.875
+2022-05-05 20:08:51,564 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3001/5260, training......, sequential mean loss is 0.21589523553848267, sequential acc is 0.90625, contextual mean loss is 0.341538667678833, contextual acc is 0.8612499833106995
+2022-05-05 20:08:51,565 - teacherTrainUtils.py - 112 - WARNING - Iter:3000/5260, strat evaluate on testset
+2022-05-05 20:11:04,940 - teacherTrainUtils.py - 129 - WARNING - epoch: 1/10, step: 3001/5260, sequential mean loss is 0.19844894111156464, sequential acc is 0.9232772588729858, contextual mean loss is 0.3014177680015564, contextual acc is 0.8760015964508057. *
+2022-05-05 20:12:01,499 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3101/5260, training......, sequential mean loss is 0.18120995163917542, sequential acc is 0.9300000071525574, contextual mean loss is 0.23243050277233124, contextual acc is 0.9037500023841858
+2022-05-05 20:12:58,062 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3201/5260, training......, sequential mean loss is 0.13850322365760803, sequential acc is 0.9437500238418579, contextual mean loss is 0.2877480387687683, contextual acc is 0.8812500238418579
+2022-05-05 20:13:54,630 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3301/5260, training......, sequential mean loss is 0.15109200775623322, sequential acc is 0.9387500286102295, contextual mean loss is 0.2760709524154663, contextual acc is 0.8949999809265137
+2022-05-05 20:14:51,202 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3401/5260, training......, sequential mean loss is 0.16614089906215668, sequential acc is 0.9337499737739563, contextual mean loss is 0.273729145526886, contextual acc is 0.8899999856948853
+2022-05-05 20:15:47,762 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3501/5260, training......, sequential mean loss is 0.196497842669487, sequential acc is 0.9300000071525574, contextual mean loss is 0.2891332805156708, contextual acc is 0.8824999928474426
+2022-05-05 20:16:44,319 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3601/5260, training......, sequential mean loss is 0.1762700080871582, sequential acc is 0.9424999952316284, contextual mean loss is 0.23833079636096954, contextual acc is 0.9037500023841858
+2022-05-05 20:17:40,896 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3701/5260, training......, sequential mean loss is 0.20155209302902222, sequential acc is 0.9300000071525574, contextual mean loss is 0.23558610677719116, contextual acc is 0.9075000286102295
+2022-05-05 20:18:37,466 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3801/5260, training......, sequential mean loss is 0.1627838909626007, sequential acc is 0.9462500214576721, contextual mean loss is 0.28893527388572693, contextual acc is 0.8899999856948853
+2022-05-05 20:19:34,031 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 3901/5260, training......, sequential mean loss is 0.19026395678520203, sequential acc is 0.925000011920929, contextual mean loss is 0.2570798993110657, contextual acc is 0.9024999737739563
+2022-05-05 20:20:30,608 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4001/5260, training......, sequential mean loss is 0.14639827609062195, sequential acc is 0.9412500262260437, contextual mean loss is 0.23084388673305511, contextual acc is 0.9075000286102295
+2022-05-05 20:21:27,212 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4101/5260, training......, sequential mean loss is 0.17383861541748047, sequential acc is 0.9487500190734863, contextual mean loss is 0.22717930376529694, contextual acc is 0.9100000262260437
+2022-05-05 20:22:23,794 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4201/5260, training......, sequential mean loss is 0.16345222294330597, sequential acc is 0.9437500238418579, contextual mean loss is 0.2597288191318512, contextual acc is 0.8987500071525574
+2022-05-05 20:23:20,384 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4301/5260, training......, sequential mean loss is 0.14699110388755798, sequential acc is 0.9512500166893005, contextual mean loss is 0.22929470241069794, contextual acc is 0.9100000262260437
+2022-05-05 20:24:16,985 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4401/5260, training......, sequential mean loss is 0.17776788771152496, sequential acc is 0.9375, contextual mean loss is 0.24322552978992462, contextual acc is 0.9125000238418579
+2022-05-05 20:25:13,578 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4501/5260, training......, sequential mean loss is 0.1587664932012558, sequential acc is 0.9512500166893005, contextual mean loss is 0.25640130043029785, contextual acc is 0.9049999713897705
+2022-05-05 20:26:10,179 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4601/5260, training......, sequential mean loss is 0.1531834453344345, sequential acc is 0.9337499737739563, contextual mean loss is 0.23396247625350952, contextual acc is 0.9112499952316284
+2022-05-05 20:27:06,792 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4701/5260, training......, sequential mean loss is 0.1647035926580429, sequential acc is 0.9412500262260437, contextual mean loss is 0.2292063683271408, contextual acc is 0.9087499976158142
+2022-05-05 20:28:03,389 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4801/5260, training......, sequential mean loss is 0.13640010356903076, sequential acc is 0.9549999833106995, contextual mean loss is 0.213068425655365, contextual acc is 0.9275000095367432
+2022-05-05 20:28:59,962 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 4901/5260, training......, sequential mean loss is 0.1082841083407402, sequential acc is 0.9649999737739563, contextual mean loss is 0.22352387011051178, contextual acc is 0.918749988079071
+2022-05-05 20:29:56,570 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 5001/5260, training......, sequential mean loss is 0.1197008416056633, sequential acc is 0.9537500143051147, contextual mean loss is 0.18884217739105225, contextual acc is 0.9362499713897705
+2022-05-05 20:30:53,183 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 5101/5260, training......, sequential mean loss is 0.12068752199411392, sequential acc is 0.9524999856948853, contextual mean loss is 0.23429548740386963, contextual acc is 0.9137499928474426
+2022-05-05 20:31:49,757 - teacherTrainUtils.py - 100 - INFO - epoch: 1/10, step: 5201/5260, training......, sequential mean loss is 0.15815269947052002, sequential acc is 0.9399999976158142, contextual mean loss is 0.1884196251630783, contextual acc is 0.9175000190734863
+2022-05-05 20:32:23,275 - teacherTrainUtils.py - 55 - INFO - ------Epoch: 1/10------
+2022-05-05 20:32:47,003 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 41/5260, training......, sequential mean loss is 0.1468101441860199, sequential acc is 0.9474999904632568, contextual mean loss is 0.2085919976234436, contextual acc is 0.9300000071525574
+2022-05-05 20:33:43,667 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 141/5260, training......, sequential mean loss is 0.15108777582645416, sequential acc is 0.9474999904632568, contextual mean loss is 0.17993155121803284, contextual acc is 0.9362499713897705
+2022-05-05 20:34:40,320 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 241/5260, training......, sequential mean loss is 0.12484166771173477, sequential acc is 0.956250011920929, contextual mean loss is 0.17683953046798706, contextual acc is 0.9350000023841858
+2022-05-05 20:35:36,939 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 341/5260, training......, sequential mean loss is 0.12182918190956116, sequential acc is 0.9549999833106995, contextual mean loss is 0.1646096259355545, contextual acc is 0.9462500214576721
+2022-05-05 20:36:33,582 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 441/5260, training......, sequential mean loss is 0.1565815508365631, sequential acc is 0.949999988079071, contextual mean loss is 0.17230172455310822, contextual acc is 0.9437500238418579
+2022-05-05 20:37:30,203 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 541/5260, training......, sequential mean loss is 0.11584493517875671, sequential acc is 0.9574999809265137, contextual mean loss is 0.16583651304244995, contextual acc is 0.9412500262260437
+2022-05-05 20:38:26,825 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 641/5260, training......, sequential mean loss is 0.12055005133152008, sequential acc is 0.9612500071525574, contextual mean loss is 0.17060214281082153, contextual acc is 0.9424999952316284
+2022-05-05 20:39:23,450 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 741/5260, training......, sequential mean loss is 0.12990505993366241, sequential acc is 0.9524999856948853, contextual mean loss is 0.19602476060390472, contextual acc is 0.9237499833106995
+2022-05-05 20:39:23,452 - teacherTrainUtils.py - 112 - WARNING - Iter:740/5260, strat evaluate on testset
+2022-05-05 20:41:37,096 - teacherTrainUtils.py - 129 - WARNING - epoch: 2/10, step: 741/5260, sequential mean loss is 0.1399575024843216, sequential acc is 0.9427083134651184, contextual mean loss is 0.20592747628688812, contextual acc is 0.9238781929016113. *
+2022-05-05 20:42:33,765 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 841/5260, training......, sequential mean loss is 0.1638013869524002, sequential acc is 0.9462500214576721, contextual mean loss is 0.17545881867408752, contextual acc is 0.9362499713897705
+2022-05-05 20:43:30,441 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 941/5260, training......, sequential mean loss is 0.11420760303735733, sequential acc is 0.9674999713897705, contextual mean loss is 0.1721065491437912, contextual acc is 0.9462500214576721
+2022-05-05 20:44:27,108 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1041/5260, training......, sequential mean loss is 0.11671359837055206, sequential acc is 0.9587500095367432, contextual mean loss is 0.16729095578193665, contextual acc is 0.9399999976158142
+2022-05-05 20:45:23,788 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1141/5260, training......, sequential mean loss is 0.14045089483261108, sequential acc is 0.9437500238418579, contextual mean loss is 0.20339153707027435, contextual acc is 0.9350000023841858
+2022-05-05 20:46:20,443 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1241/5260, training......, sequential mean loss is 0.10299719125032425, sequential acc is 0.9599999785423279, contextual mean loss is 0.18800508975982666, contextual acc is 0.9350000023841858
+2022-05-05 20:47:17,092 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1341/5260, training......, sequential mean loss is 0.1341831088066101, sequential acc is 0.9537500143051147, contextual mean loss is 0.2005053460597992, contextual acc is 0.9175000190734863
+2022-05-05 20:48:13,751 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1441/5260, training......, sequential mean loss is 0.13284403085708618, sequential acc is 0.949999988079071, contextual mean loss is 0.19088073074817657, contextual acc is 0.9325000047683716
+2022-05-05 20:49:10,409 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1541/5260, training......, sequential mean loss is 0.14821310341358185, sequential acc is 0.9462500214576721, contextual mean loss is 0.229033961892128, contextual acc is 0.9225000143051147
+2022-05-05 20:50:07,052 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1641/5260, training......, sequential mean loss is 0.11668634414672852, sequential acc is 0.9612500071525574, contextual mean loss is 0.20959296822547913, contextual acc is 0.9200000166893005
+2022-05-05 20:51:03,694 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1741/5260, training......, sequential mean loss is 0.09921791404485703, sequential acc is 0.9700000286102295, contextual mean loss is 0.18770837783813477, contextual acc is 0.9275000095367432
+2022-05-05 20:52:00,353 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1841/5260, training......, sequential mean loss is 0.15392442047595978, sequential acc is 0.9462500214576721, contextual mean loss is 0.2186477780342102, contextual acc is 0.9137499928474426
+2022-05-05 20:52:56,983 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 1941/5260, training......, sequential mean loss is 0.1365455985069275, sequential acc is 0.9487500190734863, contextual mean loss is 0.1893218457698822, contextual acc is 0.9375
+2022-05-05 20:53:53,645 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 2041/5260, training......, sequential mean loss is 0.09973733127117157, sequential acc is 0.9599999785423279, contextual mean loss is 0.1850150227546692, contextual acc is 0.9362499713897705
+2022-05-05 20:54:50,294 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 2141/5260, training......, sequential mean loss is 0.13421326875686646, sequential acc is 0.956250011920929, contextual mean loss is 0.192138671875, contextual acc is 0.9337499737739563
+2022-05-05 20:55:46,931 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 2241/5260, training......, sequential mean loss is 0.10898040980100632, sequential acc is 0.9574999809265137, contextual mean loss is 0.16645674407482147, contextual acc is 0.9462500214576721
+2022-05-05 20:56:43,568 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 2341/5260, training......, sequential mean loss is 0.1391693502664566, sequential acc is 0.9437500238418579, contextual mean loss is 0.20239557325839996, contextual acc is 0.9300000071525574
+2022-05-05 20:57:40,191 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 2441/5260, training......, sequential mean loss is 0.11585893481969833, sequential acc is 0.9512500166893005, contextual mean loss is 0.1765972524881363, contextual acc is 0.9437500238418579
+2022-05-05 20:58:36,844 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 2541/5260, training......, sequential mean loss is 0.10191120207309723, sequential acc is 0.9612500071525574, contextual mean loss is 0.18993055820465088, contextual acc is 0.9337499737739563
+2022-05-05 20:59:33,475 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 2641/5260, training......, sequential mean loss is 0.10518863797187805, sequential acc is 0.9662500023841858, contextual mean loss is 0.17656734585762024, contextual acc is 0.9449999928474426
+2022-05-05 21:00:30,097 - teacherTrainUtils.py - 100 - INFO - epoch: 2/10, step: 2741/5260, training......, sequential mean loss is 0.10731925815343857, sequential acc is 0.9612500071525574, contextual mean loss is 0.19429008662700653, contextual acc is 0.9375
