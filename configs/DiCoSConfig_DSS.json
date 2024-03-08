@@ -1,0 +1,89 @@
+{
+    "exp_purpose": "最终训练-差异学习率 + [全部联合训练[1,0.55,0.2]] + 梯度裁剪 + 权重衰减 0.15 + ult pre dropout 0.5(加在fc之前) + logit上的CE + [warmup 0.05] + 全用MaskedNLLLOSS + 加入joint预测-cls-ext分开 + large + [adam]",
+    "train_path": "./data/MultiWoZ/2.2/processed/train_dials.json",
+    "test_path": "./data/MultiWoZ/2.2/processed/test_dials.json",
+    "save_path": "./exp/DSS/",
+    "require_improvement": 200000000,
+    "num_epochs": 30,
+    "batch_size": 16,
+    "pad_size": 400,
+    "eval_step": 1000,
+    "basic_learning_rate": 1e-3,
+    "encoder_learning_rate":2e-5,
+    "bert_path": "./pretrained_models/albert-large-v2",
+    "hidden_size": 1024,
+    "special_tokens":{
+        "additional_special_tokens": [
+            "[SLOT]",
+            "[VALUE]",
+            "[NONE]",
+            "dontcare"
+        ]
+    },
+    "schema_path": "./data/MultiWoZ/2.2/processed/schema.json",
+    "testset_update_pred_path": "./data/MultiWoZ/2.2/processed/cls_score_test_state_update_predictor_output.json",
+    "rate_warmup_steps": 0.05,
+    "shuffle": true,
+    "drop_last": true,
+    "num_workers": 6,
+    "teacherMultiSample": 5,
+    "slot_type_num": 30,
+    "update":{
+        "update": 0,
+        "inherit": 1
+    },
+    "maxSlotValue": 16,
+    "sequential": {
+        "unsequential": 0,
+        "sequential": 1
+    },
+    "sequentialChangeProb": 0.5,
+    "contextual": {
+        "uncontextual": 0,
+        "contextual": 1
+    },
+    "contextualChangeProb": 0.5,
+    "domain": [
+        "hotel",
+        "train",
+        "attraction",
+        "restaurant",
+        "taxi"
+    ],
+    "num_multiHead":12,
+    "num_relationType":4,
+    "num_GNNLayer":2,
+    "track_slots":[
+        "attraction-area",
+        "attraction-name",
+        "attraction-type",
+        "hotel-area",
+        "hotel-bookday",
+        "hotel-bookpeople",
+        "hotel-bookstay",
+        "hotel-internet",
+        "hotel-name",
+        "hotel-parking",
+        "hotel-pricerange",
+        "hotel-stars",
+        "hotel-type",
+        "restaurant-area",
+        "restaurant-bookday",
+        "restaurant-bookpeople",
+        "restaurant-booktime",
+        "restaurant-food",
+        "restaurant-name",
+        "restaurant-pricerange",
+        "taxi-arriveby",
+        "taxi-departure",
+        "taxi-destination",
+        "taxi-leaveat",
+        "train-arriveby",
+        "train-bookpeople",
+        "train-day",
+        "train-departure",
+        "train-destination",
+        "train-leaveat"
+    ],
+    "mergeClassifier": true
+}
